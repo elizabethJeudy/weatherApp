@@ -1,0 +1,175 @@
+body {
+	background-image: url("images/sun\ going\ down.gif");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+button {
+	margin: 10px 200px;
+	width: 200px;
+	border: none;
+	border-radius: 20px;
+	background: #ffc107;
+	color: #876445;
+	text-align: center;
+	font-family: "Oswald", sans-serif;
+	box-shadow: 2px 2px 10px #fff;
+}
+
+footer {
+	text-align: center;
+	font-size: 10px;
+	color: #fff;
+}
+
+#weatherContainer {
+	display: flex;
+	margin: 0 auto;
+	margin-top: 10px;
+	box-sizing: content-box;
+	width: 900px;
+	height: 780px;
+	border-radius: 10px;
+	overflow: hidden;
+}
+#cityInput {
+	font-family: "Oswald", sans-serif;
+	text-align: center;
+	height: 40px;
+	width: 300px;
+	border-radius: 5px;
+	border: none;
+	margin-bottom: 10px;
+	margin-left: 20px;
+}
+
+#citySearch {
+	background: none;
+	border: none;
+	font-size: 25px;
+}
+
+#current-location-button {
+	border-radius: 5px;
+	background-color: #fff;
+	color: #000;
+	font-family: "Oswald", sans-serif;
+	border: none;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	margin-left: 220px;
+}
+
+#currentInfo {
+	box-sizing: content-box;
+	background-color: hsla(40, 20%, 97%, 0.588);
+	width: 720px;
+	height: 200px;
+	border-radius: 10px;
+	color: #000;
+}
+
+#weatherConditions {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	position: relative;
+}
+
+#feels-like,
+#humidity,
+#wind {
+	position: fixed;
+}
+
+#weather-info {
+	box-sizing: content-box;
+	background-color: hsla(40, 18%, 97%, 0.588);
+	width: 720px;
+	height: 200px;
+	border-radius: 10px;
+	font-family: "Merriweather", serif;
+	font-size: 20px;
+	color: #000;
+	text-align: center;
+	margin-top: 30px;
+	padding-top: 20px;
+}
+
+.bodyContainer {
+	margin: 0 auto;
+	padding-top: 30px;
+	color: #000;
+}
+
+.cityName {
+	color: #000;
+	font-family: "Oswald", sans-serif;
+	font-size: 50px;
+	position: relative;
+	left: 50px;
+	padding-top: 30px;
+	color: #000;
+}
+
+.currentDay {
+	position: relative;
+	left: 50px;
+	color: #000;
+	font-family: "Oswald", sans-serif;
+}
+
+.currentHour {
+	position: relative;
+	left: 100px;
+	color: #000;
+	font-family: "Oswald", sans-serif;
+}
+
+.currentMinutes {
+	position: relative;
+	left: 110px;
+	color: #000;
+	font-family: "Oswald", sans-serif;
+}
+
+.temperature {
+	position: fixed;
+	padding-top: 30px;
+	top: 80px;
+	left: 890px;
+	color: #000;
+	font-size: 60px;
+	font-family: "Oswald", sans-serif;
+}
+
+.celsiusTemperature,
+.fahrenheitTemperature {
+	position: fixed;
+	top: 80px;
+	right: 370px;
+	padding-right: 10px;
+	color: #000;
+	font-size: 20px;
+	font-family: "Oswald", sans-serif;
+}
+
+.predictions {
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #000;
+	padding-bottom: 10px;
+	display: inline;
+}
+
+.weatherDescription {
+	line-height: 60px;
+	position: fixed;
+	top: 150px;
+	left: 850px;
+	color: #000;
+	font-size: 30px;
+	font-family: "Oswald", sans-serif;
+	padding-top: 30px;
+}
