@@ -17,6 +17,7 @@ button {
 }
 
 footer {
+	margin-bottom: 100px;
 	text-align: center;
 	font-size: 10px;
 	color: #fff;
@@ -28,7 +29,7 @@ footer {
 	margin-top: 10px;
 	box-sizing: content-box;
 	width: 900px;
-	height: 780px;
+	height: 600px;
 	border-radius: 10px;
 	overflow: hidden;
 }
