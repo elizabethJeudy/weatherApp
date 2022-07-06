@@ -24,6 +24,8 @@ footer {
 
 #cityInput {
 	font-family: "Oswald", sans-serif;
+	background-color: hsla(40, 18%, 97%, 0.588);
+	font-weight: bold;
 	text-align: center;
 	height: 40px;
 	width: 200px;
