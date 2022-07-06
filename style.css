@@ -37,6 +37,11 @@ footer {
 	margin: 20px 300px;
 }
 
+#description {
+	padding-left: 600px;
+	font-size: 20px;
+}
+
 .btn {
 	position: relative;
 	left: 20px;
@@ -60,6 +65,7 @@ footer {
 	font-size: 50px;
 	position: relative;
 	color: #000;
+	left: 30px;
 }
 
 .currentDay {
