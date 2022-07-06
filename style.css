@@ -22,3 +22,9 @@ body {
 	font-family: "Oswald", sans-serif;
 	margin-left: 20px;
 }
+
+.btn:hover {
+	color: hsla(40, 18%, 97%, 0.588);
+	cursor: pointer;
+	transition: all 200ms ease;
+}
