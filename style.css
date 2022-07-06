@@ -38,6 +38,9 @@ footer {
 }
 
 .btn {
+	position: relative;
+	left: 20px;
+	bottom: 67px;
 	border: none;
 	background-color: #fff;
 	color: #000;
