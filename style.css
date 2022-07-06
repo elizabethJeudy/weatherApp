@@ -3,7 +3,11 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
+li {
+	font-family: "Oswald", sans-serif;
+	list-style: none;
+	color: #000;
+}
 footer {
 	margin-bottom: 100px;
 	text-align: center;
@@ -12,14 +16,13 @@ footer {
 }
 
 #weatherContainer {
-	display: flex;
 	margin: 0 auto;
-	margin-top: 10px;
 	box-sizing: content-box;
-	width: 900px;
-	height: 600px;
+	background-color: hsla(40, 20%, 97%, 0.588);
+	width: 720px;
+	height: 200px;
 	border-radius: 10px;
-	overflow: hidden;
+	color: #000;
 }
 
 #cityInput {
@@ -31,7 +34,7 @@ footer {
 	width: 200px;
 	border-radius: 5px;
 	border: none;
-	margin: 10px 20px;
+	margin: 20px 300px;
 }
 
 .btn {
@@ -39,11 +42,26 @@ footer {
 	background-color: #fff;
 	color: #000;
 	font-family: "Oswald", sans-serif;
-	margin-left: 20px;
+	margin: 10px 500px;
 }
 
 .btn:hover {
 	color: hsla(40, 18%, 97%, 0.588);
 	cursor: pointer;
 	transition: all 200ms ease;
+}
+
+.cityName {
+	color: #000;
+	font-family: "Oswald", sans-serif;
+	font-size: 50px;
+	position: relative;
+	color: #000;
+}
+
+.currentDay {
+	position: relative;
+	padding-top: 300px;
+	color: #000;
+	font-family: "Oswald", sans-serif;
 }

@@ -31,7 +31,7 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 	<body>
-		<div id="weatherContainer">
+		<div id="container">
 			<div class="bodyContainer">
 				<!--search location form-->
 				<form id="search-form">
@@ -46,8 +46,18 @@
 						<input type="submit" value="Current location" class="btn" />
 					</div>
 				</form>
-				<!--input of city with day and time-->
-				<div class="currentInfo"></div>
+				<div id="weatherContainer">
+					<h1 class="cityName">Miami</h1>
+					<ul>
+						<li>
+							<span class="currentDay">Monday, </span>
+							<span class="currentDate">July 6</span>
+							<br />
+							<span class="currentTime">6:52</span>
+						</li>
+						<li id="description">Cloudy</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<script src="weather.js"></script>

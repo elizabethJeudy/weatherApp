@@ -1,3 +1,4 @@
+/*
 // search city with api, city input will appear in HTML h1
 function citySearch(event) {
 	event.preventDefault();
