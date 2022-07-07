@@ -26,6 +26,9 @@ let week = [
 ];
 let weekDay = week[now.getDay()];
 
+// 
+function formateDate(timestamp)
+let date = new Date(timestamp);
 let hours = now.getHours();
 if (hours < 10) {
 	hours = `0${hours}`;
@@ -36,28 +39,35 @@ if (minutes < 10) {
 }
 document.querySelector(
 	".currentDay"
-).innerHTML = `${weekDay} ${hours} : ${minutes}`;
+).innerHTML = `${weekDay} ${hours}:${minutes}`;
 
 // get current location weather with api and HTML change
 
 function showWeather(response) {
-	document.querySelector(".temperature").innerHTML = Math.round(
-		response.data.main.temp
-	);
-	document.querySelector(
-		"#humidity"
-	).innerHTML = `${response.data.main.humidity}%`;
-	document.querySelector("#feels-like").innerHTML = Math.round(
-		response.data.main.feels_like
-	);
 
-	document.querySelector("#wind").innerHTML = Math.round(
-		response.data.wind.speed
-	);
+	let temperatureElement = document.querySelector(".temperature");
+	temeperatureElement.innerHTML = Math.round(response.data.main.temp);
 
-	document.querySelector(
-		".weatherDescription"
-	).innerHTML = `${response.data.weather[0].description}`;
+	let humidityElement = document.querySelector("#humidity")
+	humidityElement.innerHTML = `${response.data.main.humidity}%`;
+
+	let feelsElement = document.querySelector("#feels-like");
+	feelsElement.innerHTML = Math.round(response.data.main.feels_like);
+
+	let windElement = document.querySelector("#wind");
+	windElement.innerHTML = Math.round(response.data.wind.speed);
+
+	let descriptionElement = document.querySelector(".weatherDescription");
+	descriptionElement.innerHTML = `${response.data.weather[0].description}`;
+
+
+
+	let iconElement = document.querySelector("#icon");	
+	iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
+
+
+
 }
 
 function getPosition(position) {
