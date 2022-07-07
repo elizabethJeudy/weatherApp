@@ -3,11 +3,13 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
 li {
 	font-family: "Oswald", sans-serif;
 	list-style: none;
 	color: #000;
 }
+
 footer {
 	margin-bottom: 100px;
 	text-align: center;
@@ -37,12 +39,6 @@ footer {
 	margin: 20px 300px;
 }
 
-#description {
-	padding-top: 0px;
-	padding-left: 600px;
-	font-size: 20px;
-}
-
 .btn {
 	position: relative;
 	left: 20px;
@@ -68,18 +64,26 @@ footer {
 	color: #000;
 	left: 30px;
 	padding-top: 10px;
-	padding-bottom: 30px;
 }
 
 .currentDay {
-	position: relative;
-	padding-top: 300px;
+	position: fixed;
 	color: #000;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
 }
 
-.weather-image {
-	font-size: 50px;
+.currentDate {
+	position: fixed;
+	padding-left: 50px;
+	color: #000;
+	font-family: "Oswald", sans-serif;
+	font-size: 20px;
+}
+
+.description {
 	padding-left: 600px;
+	font-family: "Oswald", sans-serif;
+	font-size: 20px;
+	padding-bottom: 300px;
 }
