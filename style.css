@@ -21,7 +21,7 @@ footer {
 	margin: 0 auto;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
-	width: 720px;
+	width: 730px;
 	height: 200px;
 	border-radius: 10px;
 	color: #000;
@@ -93,10 +93,6 @@ footer {
 	font-size: 20px;
 }
 
-img {
-	padding-right: 400px;
-}
-
 .temperature {
 	position: fixed;
 	padding-left: 600px;
@@ -105,11 +101,12 @@ img {
 }
 
 .units {
-	padding-left: 5px;
+	padding-left: 700px;
 	padding-bottom: 50px;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
 	color: #fff;
+	cursor: pointer;
 }
 
 .description {
