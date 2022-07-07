@@ -44,7 +44,6 @@ document.querySelector(
 // get current location weather with api and HTML change
 
 function showWeather(response) {
-
 	let temperatureElement = document.querySelector(".temperature");
 	temeperatureElement.innerHTML = Math.round(response.data.main.temp);
 
@@ -60,9 +59,7 @@ function showWeather(response) {
 	let descriptionElement = document.querySelector(".weatherDescription");
 	descriptionElement.innerHTML = `${response.data.weather[0].description}`;
 
-
-
-	let iconElement = document.querySelector("#icon");	
+	let iconElement = document.querySelector("#icon"); 	
 	iconElement.setAttribute("src",`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`);
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
