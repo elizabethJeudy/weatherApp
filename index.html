@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -42,9 +43,11 @@
 						autofocus="on"
 						id="cityInput"
 					/>
+					
 					<div class="col-3">
 						<input type="submit" value="Current location" class="btn" />
 					</div>
+
 				</form>
 				<div id="weatherContainer">
 					<h1 class="cityName">Miami</h1>
@@ -52,6 +55,7 @@
 					<span class="currentDate"> , July 6</span>
 					<br />
 					<span class="currentTime">6:52</span>
+				
 
 					<div class="row">
 						<div class="col-6">
@@ -68,16 +72,31 @@
 						<span class="description">Cloudy</span>
 					</div>
 				</div>
-			</div>
+					<div id="predictions">
+						<div class="row">
+    				<div class="col">
+      				Feels like
+    				</div>
+    				<div class="col">
+      				Humidity
+    				</div>
+    				<div class="col">
+      				Wind mph
+    				</div>
+						<div class="row">
+    				<div class="col">
+							100<span class="">º</span>
+    				</div>
+    				<div class="col">
+      				50%
+    				</div>
+    				<div class="col">
+      				5 
+    				</div>
+		
+
 		</div>
 		<script src="weather.js"></script>
-		<footer>
-			<p>
-				<a href="https://github.com/elizabethJeudy/weatherApp"
-					>Open-source code </a
-				>by Elizabeth Jeudy, hosted on
-				<a href="https://shecodes-weatherapp.netlify.app/">Netlify</a>
-			</p>
-		</footer>
+		
 	</body>
 </html>

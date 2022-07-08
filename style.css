@@ -39,6 +39,20 @@ footer {
 	margin: 20px 300px;
 }
 
+#predictions {
+	font-family: "Oswald", sans-serif;
+	font-size: 30px;
+	text-align: center;
+	color: #000;
+	padding-top: 100px;
+}
+
+#feels-like,
+#humidity,
+#wind {
+	position: fixed;
+}
+
 .btn {
 	position: relative;
 	left: 20px;
