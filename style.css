@@ -78,7 +78,7 @@ footer {
 .currentDay {
 	position: fixed;
 	padding-top: 100px;
-	padding-left: 20px;
+	padding-left: 15px;
 	color: #000;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
@@ -86,7 +86,7 @@ footer {
 
 .currentDate {
 	position: fixed;
-	padding-left: 60px;
+	padding-left: 70px;
 	padding-top: 100px;
 	color: #000;
 	font-family: "Oswald", sans-serif;

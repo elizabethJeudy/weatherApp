@@ -37,6 +37,8 @@ let months = [
 ];
 let month = months[now.getMonth()];
 
+let date = now.getDate();
+
 let hours = now.getHours();
 if (hours < 10) {
 	hours = `0${hours}`;
@@ -47,10 +49,7 @@ if (minutes < 10) {
 }
 
 let currentDay = document.querySelector(".currentDay");
-currentDay.innerHTML = `${weekDay}`;
-
-let currentMonth = document.querySelector(".currentDate");
-currentMonth.innerHTML = `${month}`;
+currentDay.innerHTML = `${weekDay}, ${month} ${date}`;
 
 let currentTime = document.querySelector(".currentTime");
 currentTime.innerHTML = `${hours}:${minutes}`;
