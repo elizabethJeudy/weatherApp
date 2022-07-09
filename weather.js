@@ -1,3 +1,4 @@
+// search city input will change h1
 function citySearch(event) {
 	event.preventDefault();
 	let cityInput = document.querySelector("#cityInput");
@@ -6,6 +7,31 @@ function citySearch(event) {
 }
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", citySearch);
+
+// current day and time will update
+let now = new Date();
+let week = [
+	"Sunday",
+	"Monday",
+	"Tuesday",
+	"Wednesday",
+	"Thursday",
+	"Friday",
+	"Saturday",
+];
+let weekDay = week[now.getDay()];
+
+let hours = now.getHours();
+if (hours < 10) {
+	hours = `0${hours}`;
+}
+let minutes = now.getMinutes();
+if (minutes < 10) {
+	minutes = `0${minutes}`;
+}
+let currentTime = document.querySelector(".currentDay");
+currentTime.innerHTML = `${weekDay} ${hours}:${minutes}`;
+
 /*
 // search city with api, city input will appear in HTML h1
 function citySearch(event) {
