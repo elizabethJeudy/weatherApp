@@ -105,16 +105,17 @@ footer {
 
 .temperature {
 	position: fixed;
+	padding-top: 10px;
 	padding-left: 600px;
 	font-family: "Oswald", sans-serif;
 	font-size: 70px;
 }
 
 .units {
-	padding-left: 700px;
-	padding-bottom: 50px;
+	padding-left: 680px;
+	padding-top: 30px;
 	font-family: "Oswald", sans-serif;
-	font-size: 20px;
+	font-size: 15px;
 	color: #fff;
 }
 
