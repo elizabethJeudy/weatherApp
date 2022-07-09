@@ -30,7 +30,7 @@ footer {
 #cityInput {
 	font-family: "Oswald", sans-serif;
 	background-color: hsla(40, 18%, 97%, 0.588);
-	font-weight: bold;
+	font-weight: light;
 	text-align: center;
 	height: 40px;
 	width: 200px;
@@ -41,6 +41,7 @@ footer {
 
 #predictions {
 	font-family: "Oswald", sans-serif;
+	font-weight: lighter;
 	font-size: 30px;
 	text-align: center;
 	color: #000;
@@ -67,11 +68,11 @@ footer {
 
 .cityName {
 	color: #000;
-	font-family: "Merriweather", serif;
+	font-family: "Oswald", sans-serif;
 	font-size: 50px;
 	position: fixed;
 	color: #000;
-	left: 350px;
+	left: 340px;
 	padding-top: 30px;
 }
 
