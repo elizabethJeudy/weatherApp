@@ -1,4 +1,12 @@
-
+function citySearch(event) {
+	event.preventDefault();
+	let cityInput = document.querySelector("#cityInput");
+	let cityName = document.querySelector(".cityName");
+	cityName.innerHTML = `${cityInput.value}`;
+}
+let searchForm = document.querySelector("#search-form");
+searchForm.addEventListener("submit", citySearch);
+/*
 // search city with api, city input will appear in HTML h1
 function citySearch(event) {
 	event.preventDefault();
@@ -27,8 +35,6 @@ let week = [
 let weekDay = week[now.getDay()];
 
 // 
-function formateDate(timestamp)
-let date = new Date(timestamp);
 let hours = now.getHours();
 if (hours < 10) {
 	hours = `0${hours}`;
@@ -74,4 +80,4 @@ navigator.geolocation.getCurrentPosition(getPosition);
 /*
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentLocation);
-*/ 
+*/

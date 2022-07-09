@@ -13,9 +13,6 @@
 			integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
 			crossorigin="anonymous"
 		/>
-		<!--axios-->
-		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-
 		<!--google fonts-->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,6 +27,8 @@
 		/>
 		<!--css sheet-->
 		<link rel="stylesheet" href="style.css" />
+			<!--axios-->
+		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -43,12 +42,14 @@
 						autofocus="on"
 						id="cityInput"
 					/>
+					
+					 </form>
 					<!--current location button-->
 					<div class="col-3">
 						<input type="submit" value="Current location" class="btn" />
 					</div>
-<!--city input weather container-->
-				</form>
+					<!--city input weather container-->
+				
 				<div id="weatherContainer">
 					<h1 class="cityName">Miami</h1>
 					<span class="currentDay"><strong>Monday</strong> </span>
