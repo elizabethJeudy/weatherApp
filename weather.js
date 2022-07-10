@@ -72,3 +72,17 @@ function showWeather(response) {
 	let windElement = document.querySelector("#wind");
 	windElement.innerHTML = Math.round(response.data.wind.speed);
 }
+
+// get current location api
+
+function getPosition(position) {
+	let apiKey = "e8f1caf1080f26b2667bd09ad9d42c74";
+	let lat = position.coords.latitude;
+	let lon = position.coords.longitude;
+	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
+	axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
+}
+navigator.geolocation.getCurrentPosition(getPosition);
+
+let currentLocationButton = document.querySelector("#current-location-button");
+currentLocationButton.addEventListener("click", getCurrentLocation);
