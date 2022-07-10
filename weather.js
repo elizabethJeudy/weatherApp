@@ -61,4 +61,6 @@ searchForm.addEventListener("submit", citySearch);
 // get location input api
 function showWeather(response) {
 	console.log(response);
+	let temperatureElement = document.querySelector(".temperature");
+	temperatureElement.innerHTML = Math.round(response.data.main.temp);
 }
