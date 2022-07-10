@@ -52,8 +52,8 @@ function citySearch(event) {
 	cityName.innerHTML = `${cityInput.value}`;
 	let city = `${cityInput.value}`;
 	let apiKey = "e8f1caf1080f26b2667bd09ad9d42c74";
-	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q${city}=units=imperial&appid=${apiKey}`;
-	axios.get(apiUrl).then(showWeather);
+	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=imperial&appid=${apiKey}`;
+	axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
 }
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", citySearch);
