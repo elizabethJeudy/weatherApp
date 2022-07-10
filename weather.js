@@ -63,4 +63,6 @@ function showWeather(response) {
 	console.log(response);
 	let temperatureElement = document.querySelector(".temperature");
 	temperatureElement.innerHTML = Math.round(response.data.main.temp);
+	let descriptionElement = document.querySelector(".description");
+	descriptionElement.innerHTML = `${response.data.weather[0].main}`;
 }
