@@ -65,4 +65,6 @@ function showWeather(response) {
 	temperatureElement.innerHTML = Math.round(response.data.main.temp);
 	let descriptionElement = document.querySelector(".description");
 	descriptionElement.innerHTML = `${response.data.weather[0].main}`;
+	let feelsElement = document.querySelector("#feels-like");
+	feelsElement.innerHTML = Math.round(response.data.main.feels_like);
 }
