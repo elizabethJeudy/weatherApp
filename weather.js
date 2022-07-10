@@ -82,7 +82,11 @@ function getPosition(position) {
 	let apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=imperial&appid=${apiKey}`;
 	axios.get(`${apiUrl}&appid=${apiKey}`).then(showWeather);
 }
-navigator.geolocation.getCurrentPosition(getPosition);
+
+function getCurrentPosition(event) {
+	event.preventDefault();
+	navigator.geolocation.getCurrentPosition(getPosition);
+}
 
 let currentLocationButton = document.querySelector("#current-location-button");
-currentLocationButton.addEventListener("click", getCurrentLocation);
+currentLocationButton.addEventListener("click", getCurrentPosition);
