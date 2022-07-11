@@ -4,7 +4,6 @@ body {
 }
 
 footer {
-	margin-top: 400px;
 	text-align: center;
 	font-size: 10px;
 	color: #fff;
@@ -48,10 +47,12 @@ footer {
 }
 
 #forecast {
+	margin: 0 auto;
+	margin-top: 100px;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
 	width: 730px;
-	height: 200px;
+	height: 250px;
 	border-radius: 10px;
 	color: #000;
 }
