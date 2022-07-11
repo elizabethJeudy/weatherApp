@@ -1,7 +1,7 @@
 body {
-	background-image: url("images/sun\ going\ down.gif");
+	background-image: url("images/sky.jpg");
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: 100%;
 }
 
 li {
