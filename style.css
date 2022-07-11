@@ -50,7 +50,7 @@ footer {
 #forecast {
 	margin: 0 auto;
 	margin-top: 120px;
-	padding-top: 10px;
+	padding-top: 30px;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
 	font-family: "Oswald", sans-serif;
@@ -140,4 +140,9 @@ footer {
 	padding-top: 120px;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
+}
+
+.forecastDate,
+.temperatureMin {
+	opacity: 55%;
 }
