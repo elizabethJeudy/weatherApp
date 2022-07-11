@@ -51,11 +51,11 @@ footer {
 	margin: 0 auto;
 	margin-top: 120px;
 	padding-top: 10px;
-	padding-left: 60px;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
 	font-family: "Oswald", sans-serif;
 	font-weight: 60px;
+	text-align: center;
 	font-size: 20px;
 	width: 730px;
 	height: 250px;
