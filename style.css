@@ -28,7 +28,7 @@ footer {
 	width: 200px;
 	border-radius: 5px;
 	border: none;
-	margin: 20px 570px;
+	margin: 20px 595px;
 }
 
 #icon {
@@ -54,6 +54,9 @@ footer {
 	padding-left: 60px;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
+	font-family: "Oswald", sans-serif;
+	font-weight: 60px;
+	font-size: 20px;
 	width: 730px;
 	height: 250px;
 	border-radius: 10px;
@@ -68,7 +71,7 @@ footer {
 	background-color: #fff;
 	color: #000;
 	font-family: "Oswald", sans-serif;
-	margin: 60px 590px;
+	margin: 60px 620px;
 	margin-bottom: 0px;
 }
 
