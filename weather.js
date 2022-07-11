@@ -60,7 +60,8 @@ searchForm.addEventListener("submit", citySearch);
 
 // get location input api
 function showWeather(response) {
-	console.log(response);
+	let cityName = document.querySelector(".cityName");
+	cityName.innerHTML = response.data.name;
 	let temperatureElement = document.querySelector(".temperature");
 	temperatureElement.innerHTML = Math.round(response.data.main.temp);
 	let descriptionElement = document.querySelector(".description");
@@ -77,6 +78,7 @@ function showWeather(response) {
 		`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
 	);
 	iconElement.setAttribute("alt", response.data.weather[0].description);
+	fahrenheitTemperature = response.data.main.temp;
 }
 
 // get current location api
@@ -99,10 +101,16 @@ currentLocationButton.addEventListener("click", getCurrentPosition);
 
 // temperature conversions
 
+/*
 function showCelciusTemperature(event) {
 	event.preventDefault();
-	alert("link clicked");
+	let celciusTemperature = "(temperatureElement - 32) * 5) / 9";
+	let temperatureElement = document.querySelector("#temperature");
+	temperatureElement.innerHTML = Math.round(celciusTemperature);
 }
+
+let fahrenheitTemperature = null;
 
 let celciusLink = document.querySelector("#celcius-link");
 celciusLink.addEventListener("click", showCelciusTemperature);
+*/
