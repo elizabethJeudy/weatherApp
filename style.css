@@ -44,11 +44,12 @@ footer {
 	color: #000;
 	position: fixed;
 	margin-left: 430px;
+	padding-top: 15px;
 }
 
 #forecast {
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: 120px;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
 	width: 730px;
