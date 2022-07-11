@@ -96,3 +96,13 @@ function getCurrentPosition(event) {
 
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
+
+// temperature conversions
+
+function showCelciusTemperature(event) {
+	event.preventDefault();
+	alert("link clicked");
+}
+
+let celciusLink = document.querySelector("#celcius-link");
+celciusLink.addEventListener("click", showCelciusTemperature);
