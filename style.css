@@ -1,7 +1,6 @@
 body {
 	background-image: url("images/sky.jpg");
-	background-repeat: no-repeat;
-	background-size: 100%;
+	background-position: center;
 }
 
 footer {
@@ -48,6 +47,15 @@ footer {
 	margin-left: 430px;
 }
 
+#forecast {
+	box-sizing: content-box;
+	background-color: hsla(40, 20%, 97%, 0.588);
+	width: 730px;
+	height: 200px;
+	border-radius: 10px;
+	color: #000;
+}
+
 .btn {
 	position: relative;
 	left: 20px;
@@ -72,7 +80,7 @@ footer {
 	font-size: 50px;
 	position: fixed;
 	color: #000;
-	left: 340px;
+	left: 370px;
 	padding-top: 30px;
 }
 
