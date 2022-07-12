@@ -58,6 +58,20 @@ function citySearch(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", citySearch);
 
+function showForecast() {
+	let forecastElement = document.querySelector("#forecast");
+	forecastElement.innerHTML = `<div class="row">
+							<div class="col-6">
+								<div class="forecastDate">Monday</div>
+								<img src="https://openweathermap.org/img/wn/02n@2x.png" alt="" />
+								<div class="forecastTemperature">
+									<span class="temperatureMax"> 96º |</span>
+									<span class="temperatureMin"> 85º</span>
+								</div>
+								<div class="forecastDescription">Cloudy</div>
+							</div>`;
+}
+
 // get location input api
 function showWeather(response) {
 	let cityName = document.querySelector(".cityName");
@@ -78,7 +92,7 @@ function showWeather(response) {
 		`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
 	);
 	iconElement.setAttribute("alt", response.data.weather[0].description);
-	fahrenheitTemperature = response.data.main.temp;
+	showForecast();
 }
 
 // get current location api
