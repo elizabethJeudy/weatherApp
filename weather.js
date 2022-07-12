@@ -58,6 +58,15 @@ function citySearch(event) {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", citySearch);
 
+// retrieves daily forecast for input city and displays it
+
+function getForecast(coordinates) {
+	console.log(coordinates);
+	let apiKey = "e8f1caf1080f26b2667bd09ad9d42c74";
+	let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+	axios.get(apiUrl).then(showForecast);
+}
+
 function showForecast() {
 	let forecastElement = document.querySelector("#forecast");
 	forecastElement.innerHTML = `<div class="row">
@@ -92,7 +101,7 @@ function showWeather(response) {
 		`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@4x.png`
 	);
 	iconElement.setAttribute("alt", response.data.weather[0].description);
-	showForecast();
+	getForecast(response.data.coord);
 }
 
 // get current location api
