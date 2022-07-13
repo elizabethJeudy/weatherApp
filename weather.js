@@ -69,16 +69,38 @@ function getForecast(coordinates) {
 
 function showForecast() {
 	let forecastElement = document.querySelector("#forecast");
-	forecastElement.innerHTML = `<div class="row">
-							<div class="col-6">
-								<div class="forecastDate">Monday</div>
-								<img src="https://openweathermap.org/img/wn/02n@2x.png" alt="" />
-								<div class="forecastTemperature">
+
+	let days = [
+		"Tuesday",
+		"Wednesday",
+		"Thursday",
+		"Friday",
+		"Saturday",
+		"Sunday",
+	];
+
+	let forecastHTML = `<div class="row">`;
+	days.forEach(function (day) {
+		forecastHTML =
+			forecastHTML +
+			`
+	<div class="col-2">
+		<div class="forecastDate">${day}</div>
+		 <img
+          src="http://openweathermap.org/img/wn/50d@2x.png"/>
+			<div class="forecastTemperature">
 									<span class="temperatureMax"> 96º |</span>
 									<span class="temperatureMin"> 85º</span>
 								</div>
 								<div class="forecastDescription">Cloudy</div>
-							</div>`;
+							</div>
+						</div>
+`;
+	});
+
+	forecastHTML = forecastHTML + `</div>`;
+	forecastElement.innerHTML = forecastHTML;
+	console.log(forecastHTML);
 }
 
 // get location input api
