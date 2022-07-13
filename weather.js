@@ -60,13 +60,6 @@ searchForm.addEventListener("submit", citySearch);
 
 // retrieves daily forecast for input city and displays it
 
-function getForecast(coordinates) {
-	console.log(coordinates);
-	let apiKey = "e8f1caf1080f26b2667bd09ad9d42c74";
-	let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
-	axios.get(apiUrl).then(showForecast);
-}
-
 function showForecast() {
 	let forecastElement = document.querySelector("#forecast");
 
@@ -84,25 +77,28 @@ function showForecast() {
 		forecastHTML =
 			forecastHTML +
 			`
-	<div class="col-2">
-		<div class="forecastDate">${day}</div>
-		 <img
-          src="http://openweathermap.org/img/wn/50d@2x.png"/>
+		<div class="col-2">
+			<div class="forecastDate">${day}</div>
+			<img src="http://openweathermap.org/img/wn/50d@2x.png" />
 			<div class="forecastTemperature">
-									<span class="temperatureMax"> 96º |</span>
-									<span class="temperatureMin"> 85º</span>
-								</div>
-								<div class="forecastDescription">Cloudy</div>
-							</div>
-						</div>
-`;
+				<span class="temperatureMax"> 96º |</span>
+				<span class="temperatureMin"> 85º</span>
+			</div>
+			<div class="forecastDescription">Cloudy</div>
+		</div>
+	`;
 	});
 
 	forecastHTML = forecastHTML + `</div>`;
 	forecastElement.innerHTML = forecastHTML;
-	console.log(forecastHTML);
 }
 
+function getForecast(coordinates) {
+	console.log(coordinates);
+	let apiKey = "e8f1caf1080f26b2667bd09ad9d42c74";
+	let apiUrl = `https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${apiKey}&units=imperial`;
+	axios.get(apiUrl).then(showForecast);
+}
 // get location input api
 function showWeather(response) {
 	let cityName = document.querySelector(".cityName");
@@ -144,6 +140,7 @@ function getCurrentPosition(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
 
+showForecast();
 // temperature conversions
 
 /*

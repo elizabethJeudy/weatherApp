@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 	<head>
@@ -14,9 +13,12 @@
 			crossorigin="anonymous"
 		/>
 		<!--google fonts-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;700&display=swap"
+			rel="stylesheet"
+		/>
 		<!--font awesome-->
 		<link
 			rel="stylesheet"
@@ -24,7 +26,7 @@
 		/>
 		<!--css sheet-->
 		<link rel="stylesheet" href="style.css" />
-			<!--axios-->
+		<!--axios-->
 		<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	</head>
 	<body>
@@ -39,51 +41,66 @@
 						autofocus="on"
 						id="cityInput"
 					/>
-					
-					 </form>
-					<!--current location button-->
-					<div class="col-3">
-						<input type="submit" value="Current location" class="btn" id="current-location-button" />
-					</div>
-					<!--city input weather container-->
-				
+				</form>
+				<!--current location button-->
+				<div class="col-3">
+					<input
+						type="submit"
+						value="Current location"
+						class="btn"
+						id="current-location-button"
+					/>
+				</div>
+				<!--city input weather container-->
+
 				<div id="weatherContainer">
 					<h1 class="cityName">Miami</h1>
 					<div class="col-8 col-sm-8">
-					<span class="currentDay"><strong></strong> </span>
-					<span class="currentDate"></span>
+						<span class="currentDay"><strong></strong> </span>
+						<span class="currentDate"></span>
 					</div>
 					<span class="currentTime"></span>
-				
-    			 <img src="https://openweathermap.org/img/wn/02n@4x.png" alt="" id="icon" class="float-left" />
+
+					<img
+						src="https://openweathermap.org/img/wn/02n@4x.png"
+						alt=""
+						id="icon"
+						class="float-left"
+					/>
 
 					<div class="row">
 						<span class="temperature">90</span>
-						<span class="units"><a href="">ºF </a><a href="#" id="celcius-link">| ºC</a></span>
+						<span class="units"
+							><a href="">ºF </a><a href="#" id="celcius-link">| ºC</a></span
+						>
 
 						<span class="description">Cloudy</span>
 					</div>
 				</div>
-				
+
 				<div id="predictions">
 					<div class="row">
-					<div class="col-6 col-sm-4">Feels like</div>
-					<div class="col-6 col-sm-4">Humidity</div>
-					<div class="col-6 col-sm-4">Wind m/ph</div>
-						<br> 
-					<div class="col-6 col-sm-4" id="feels-like">104<span class="">º</span></div>
-					<div class="col-6 col-sm-4" id="humidity">65%</div>
-					<div class="col-6 col-sm-4" id="wind">15</div>
+						<div class="col-6 col-sm-4">Feels like</div>
+						<div class="col-6 col-sm-4">Humidity</div>
+						<div class="col-6 col-sm-4">Wind m/ph</div>
+						<br />
+						<div class="col-6 col-sm-4" id="feels-like">
+							104<span class="">º</span>
+						</div>
+						<div class="col-6 col-sm-4" id="humidity">65%</div>
+						<div class="col-6 col-sm-4" id="wind">15</div>
+					</div>
 				</div>
-			
+				<!--6 day forecast-->
+				<div class="forecast" id="forecast"></div>
 			</div>
-			<!--6 day forecast-->
-					<div id="forecast" class="forecast"></div>
-									
 		</div>
 		<script src="weather.js"></script>
 		<footer>
-			<a href="https://github.com/elizabethJeudy/weatherApp">Open source code</a> by: Elizabeth Jeudy 
+			<a href="https://github.com/elizabethJeudy/weatherApp"
+				>Open source code</a
+			>
+			by: Elizabeth Jeudy
 		</footer>
 	</body>
 </html>
