@@ -140,6 +140,7 @@ function getCurrentPosition(event) {
 let currentLocationButton = document.querySelector("#current-location-button");
 currentLocationButton.addEventListener("click", getCurrentPosition);
 
+showForecast();
 // temperature conversions
 
 /*
