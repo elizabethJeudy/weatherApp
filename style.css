@@ -1,6 +1,7 @@
 body {
 	background-image: url("images/sky.jpg");
 	background-position: center;
+	background-repeat: no-repeat;
 }
 
 footer {
@@ -29,6 +30,7 @@ footer {
 	border-radius: 5px;
 	border: none;
 	margin: 20px 595px;
+	display: flex;
 }
 
 #icon {
@@ -145,4 +147,8 @@ footer {
 .forecastDate,
 .temperatureMin {
 	opacity: 55%;
+}
+
+.forecastDescription:first-letter {
+	text-transform: capitalize;
 }
