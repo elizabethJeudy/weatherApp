@@ -47,7 +47,7 @@ currentTime.innerHTML = `${hours}:${minutes}`;
 // search city input will change h1
 function citySearch(event) {
 	event.preventDefault();
-	let cityInput = document.querySelector("#city-input");
+	let cityInput = document.querySelector("#cityInput");
 	let cityName = document.querySelector(".cityName");
 	cityName.innerHTML = `${cityInput.value}`;
 	let city = `${cityInput.value}`;
