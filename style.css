@@ -1,6 +1,7 @@
 body {
 	background-image: url("images/sky.jpg");
 	background-position: center;
+	background-repeat: no-repeat;
 }
 footer {
 	text-align: center;
@@ -8,11 +9,11 @@ footer {
 	color: #fff;
 }
 #weatherContainer {
-	margin: 0 auto;
+	margin: 15px auto;
 	box-sizing: content-box;
 	background-color: hsla(40, 20%, 97%, 0.588);
-	width: 730px;
-	height: 200px;
+	width: 790px;
+	height: 210px;
 	border-radius: 10px;
 	color: #000;
 }
@@ -25,29 +26,27 @@ footer {
 	width: 200px;
 	border-radius: 5px;
 	border: none;
-	margin: 20px 595px;
 }
+
+#current-location-button {
+	margin: 3px auto;
+}
+
 #icon {
-	position: fixed;
-	padding: 0px 370px;
+	display: flex;
+	flex-direction: column-reverse;
 }
+
 #predictions {
 	font-family: "Oswald", sans-serif;
 	font-weight: lighter;
 	font-size: 30px;
-	text-align: center;
 	color: #000;
-	position: fixed;
-	margin-left: 430px;
-	padding-top: 15px;
 }
 #forecast {
 	margin: 0 auto;
-	margin-top: 120px;
-	padding-top: 30px;
+	margin-top: 100px;
 	box-sizing: content-box;
-	background-color: hsla(40, 20%, 97%, 0.588);
-	background-color: hsla(40, 20%, 97%, 0.001);
 	font-family: "Oswald", sans-serif;
 	font-weight: 60px;
 	text-align: center;
@@ -59,14 +58,10 @@ footer {
 }
 .btn {
 	position: relative;
-	left: 20px;
-	bottom: 67px;
 	border: none;
 	background-color: #fff;
 	color: #000;
 	font-family: "Oswald", sans-serif;
-	margin: 60px 620px;
-	margin-bottom: 0px;
 }
 .btn:hover {
 	color: hsla(40, 18%, 97%, 0.588);
@@ -77,55 +72,43 @@ footer {
 	color: #000;
 	font-family: "Oswald", sans-serif;
 	font-size: 50px;
-	position: fixed;
+	position: relative;
+	padding-left: 15px;
 	color: #000;
-	left: 370px;
-	padding-top: 30px;
 }
 .currentDay {
-	position: fixed;
-	padding-top: 100px;
+	position: relative;
 	padding-left: 15px;
 	color: #000;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
 }
-.currentDate {
-	position: fixed;
-	padding-left: 70px;
-	padding-top: 100px;
-	color: #000;
-	font-family: "Oswald", sans-serif;
-	font-size: 20px;
-}
+
 .currentTime {
-	position: fixed;
+	position: relative;
 	padding-left: 15px;
-	padding-top: 130px;
 	color: #000;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
 }
-.temperature {
-	position: fixed;
-	padding-top: 20px;
+
+.temp {
+	display: flex;
+	flex-direction: column;
 	padding-left: 590px;
+}
+
+.temperature {
 	font-family: "Oswald", sans-serif;
 	font-size: 70px;
 }
 
 .units {
-	padding-left: 665px;
-	padding-left: 680px;
-	padding-top: 40px;
 	font-family: "Oswald", sans-serif;
-	font-size: 25px;
+	font-size: 30px;
 	color: #000;
 }
 .description {
-	position: fixed;
-	padding-left: 600px;
-	padding-top: 120px;
 	font-family: "Oswald", sans-serif;
 	font-size: 20px;
 }

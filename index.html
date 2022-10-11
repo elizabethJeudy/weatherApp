@@ -31,65 +31,61 @@
 	</head>
 	<body>
 		<div id="container">
-			<div class="bodyContainer">
-				<!--search location form-->
-				<form id="search-form">
-					<input
-						type="text"
-						placeholder=" Search city here"
-						autocomplete="off"
-						autofocus="on"
-						id="cityInput"
-					/>
-				</form>
-				<!--current location button-->
-				<div class="col-3">
-					<input
-						type="submit"
-						value="Current location"
-						class="btn"
-						id="current-location-button"
-					/>
-				</div>
-				<!--city input weather container-->
-				<div id="weatherContainer">
+			<!--search location form-->
+			<form id="search-form" class="d-flex justify-content-center p-3">
+				<input
+					type="text"
+					placeholder=" Search city here"
+					autocomplete="off"
+					autofocus="on"
+					id="cityInput"
+				/>
+			</form>
+			<!--current location button-->
+			<input
+				type="submit"
+				value="Current location"
+				class="btn d-flex justify-content-center"
+				id="current-location-button"
+			/>
+
+			<!--city input weather container-->
+			<div id="weatherContainer" class="row">
+				<div class="col-4">
 					<h1 class="cityName">Miami</h1>
-					<div class="col-8 col-sm-8">
-						<span class="currentDay"><strong></strong> </span>
-						<span class="currentDate"></span>
-					</div>
-					<span class="currentTime"></span>
+					<div class="currentDay"><strong></strong></div>
+					<div class="currentDate"></div>
+					<br />
+					<div class="currentTime"></div>
+				</div>
+				<div class="col-4">
 					<img
 						src="https://openweathermap.org/img/wn/02n@4x.png"
 						alt=""
 						id="icon"
-						class="float-left"
 					/>
-
-					<div class="row">
-						<span class="temperature">90</span>
-						<span class="units"
-							><a href="#">ºF </a>
-
-						<span class="description">Cloudy</span>
-					</div>
 				</div>
-				<div id="predictions">
-					<div class="row">
-						<div class="col-6 col-sm-4">Feels like</div>
-						<div class="col-6 col-sm-4">Humidity</div>
-						<div class="col-6 col-sm-4">Wind m/ph</div>
-						<br />
-						<div class="col-6 col-sm-4" id="feels-like">
-							104<span class="">º</span>
-						</div>
-						<div class="col-6 col-sm-4" id="humidity">65%</div>
-						<div class="col-6 col-sm-4" id="wind">15</div>
-					</div>
+				<div class="col-4">
+					<div class="temperature">90<span class="units">ºF</span></div>
+					<div class="description">Cloudy</div>
 				</div>
-				<!--6 day forecast-->
-				<div class="forecast" id="forecast"></div>
 			</div>
+			<div id="predictions">
+				<div class="row text-center">
+					<div class="col-4">Feels like</div>
+					<div class="col-4">Humidity</div>
+					<div class="col-4">Wind m/ph</div>
+					<br />
+					<div class="col-sm-4" id="feels-like">
+						104
+						<span class="">º</span>
+					</div>
+					<div class="col-sm-4" id="humidity">65%</div>
+					<div class="col-sm-4" id="wind">15</div>
+				</div>
+			</div>
+			<!--6 day forecast-->
+			<div class="forecast" id="forecast"></div>
 		</div>
 		<script src="weather.js"></script>
 		<footer>
