@@ -23,7 +23,7 @@ let months = [
 	"September",
 	"October",
 	"November",
-	"Decemeber",
+	"December",
 ];
 let month = months[now.getMonth()];
 
